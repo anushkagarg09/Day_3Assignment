@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/submit_registration" method="post">
+        <h1>Tech Fest 2025 - Registration Form</h1>
+        <p><em>What if your college tech fest needed a registration page — and you had to build it?</em></p>
+            <label for="name"> Full Name : </label><br>
+            <input type="text" id="name" name="full_name" required><br>
+            <label for="email">Email :</label><br>
+            <input type="text" id="email" required><br>
+            <label for="College Name">College Name :</label><br>
+            <input type="text" id="College" required><br>
+            <label for="year">Year of Study: </label><br>
+            <select id="year" name="year"><
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="gender">Gender:</label><br>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+        <h3>Events you want to participate in:</h3>
+        <select id="participate">
+            <option value="">Coding Challenge</option>
+            <option value="">Hackathon</option>
+            <option value="">Tech Quiz</option>
+            <option value="">Robotics</option>
+        </select>
+        <h4>Any Special Requirements or Comments</h4>
+        <div>
+            <textarea id="bio" cols="100" rows="6"></textarea>
+        </div>
+        <div>
+            <button type="button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
